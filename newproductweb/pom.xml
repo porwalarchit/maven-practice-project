@@ -16,13 +16,7 @@
 		war</packaging>
 
 
-	<!-- <groupId>com.porwal.product</groupId>
-	<artifactId>newproductweb</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>-->
-
 	<name>newproductweb Maven Webapp</name>
-	<!-- FIXME change it to the project's website -->
 	<url>
 		http://www.example.com</url>
 
@@ -50,7 +44,6 @@
 			<artifactId>newproductservices</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>

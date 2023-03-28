@@ -8,14 +8,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.porwal.product.dto.*;
-import com.porwal.product.bo.*;
+import com.porwal.product.dto.Product;
+import com.porwal.product.bo.ProductBO;
+import com.porwal.product.bo.ProductBOImpl;
 
 /**
  * Servlet implementation class CreateProductServlet
  */
 public class CreateProductServlet extends HttpServlet {
-	private static final long serialVersionUID = 102831973239L;
+	private static final long serialVersionUID = 1L;
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -35,6 +36,8 @@ public class CreateProductServlet extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		out.print("Product Created!!!");
+		out.print(product.getId() + " " + product.getName());
+		
 	}
 
 }
